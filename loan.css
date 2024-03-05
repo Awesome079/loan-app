@@ -212,6 +212,10 @@ body{
     margin-top: 2cm;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
 .HH img{
     /* background-color: blue; */
     width: 30px;
@@ -314,6 +318,13 @@ body{
     color: blue;
 }
 
+.topDeal select{
+    height: 1.2cm;
+    width: 10.3cm;
+    color: blue;
+
+}
+
 .top1{
     margin-left: 2cm;
 }
@@ -341,14 +352,17 @@ body{
     padding-top: 1cm;
 }
 
-.top3{
+/* .top3{
     margin-left: 2cm;
-}
+} */
 
 .top4{
     margin-left: 2cm;
 }
 
+.topbal{
+    margin-left: 2cm;
+}
 .top5{
     margin-left: 2cm;
     padding-bottom: 1cm;
@@ -399,4 +413,17 @@ body{
     cursor: progress;
     margin-left: 1cm;
     
+}
+
+.Congratution1{
+    background-color: aliceblue;
+}
+.Congratution{
+    margin: 5cm 5cm;
+    border: 1px solid blue;
+    border-radius: 40cm;
+    background-color: blueviolet;
+    font-style: italic;
+    font-size: x-large;
+
 }

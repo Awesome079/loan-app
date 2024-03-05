@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="loan.css">
 </head>
 <body class="app">
-
+    <form action="">
     <header class="top">
         <div class="top1">
             <h1>Online Application</h1>
@@ -22,38 +22,70 @@
             <input placeholder="TITLE"><br><br>
             <input placeholder="LAST NAME"><br><br>
             <input placeholder="FIRST NAME"><br><br>
-            <input placeholder="ADDRESS"><br><br>
+            <!-- <input placeholder="ADDRESS"><br><br>
             <input placeholder="STATE"><br><br>
             <input placeholder="EMAIL ADDRESS"><br><br>
-            <input placeholder="MOBILE NO"><br><br>
+            <input placeholder="MOBILE NO" type="number"><br><br>
             <input placeholder="NATIONALITY"><br><br>
-            <input placeholder="I.D NUMBER/PASSORT NUMBER"><br><br>
-            <input placeholder="DATE OF BIRTH"><br><br>
+            <input placeholder="I.D NUMBER/PASSORT NUMBER" type="number"><br><br>
+            <p>DATE OF BIRTH <br><input placeholder="DATE OF BIRTH" type="date"><br><br></p> -->
             
         </div>
 
-        <div class="top3">
+        <!-- <div class="top3">
             <h1>Employment Details</h1>
             <input placeholder="EMPLOYMENT STATUS"><br><br>
             <input placeholder="BUSINESS/JOB TITLE"><br><br>
             <input placeholder="EMPLOYER/BUSINESS NAME"><br><br>
             <input placeholder="OFFICE/BUSINESS ADDERSS"><br><br>
-            <input placeholder="MONTHLY INCOME"><br><br>
-        </div>
+           
+        </div> -->
 
         <div class="top4">
             <h1>Loan Details</h1>
-            <input placeholder="TYPES OF LOAN"><br><br>
-            <input placeholder="REQUIRED LOAN AMOUNT"><br><br>
-            <input placeholder="LOAN TERM"><br><br>
-            <input placeholder="ARE YOU BLACKLISTED"><br><br>
-            <input placeholder="LOAN REPAYMENT METHOD"><br><br>
-            <input placeholder="APPLICATION DATE"><br><br>
+            <!-- <input placeholder="TYPES OF LOAN"><br><br> -->
+            <input placeholder="REQUIRED LOAN AMOUNT" type="number" id="LoanAmount"><br><br>
+            <select name="" id="HISTORYCR">
+                <option value="">MONTHLY CREDIT HISTORY</option>
+                <option value="1">GREATER THAN SIX MONTHS</option>
+                <option value="2">LESS THAN SIX MONTHS</option>
+            </select> <br> <br>
+            <!-- <input placeholder="MONTHLY Credit HISTORY"><br><br> -->
+            <!-- <input placeholder="LOAN REPAYMENT METHOD"><br><br> -->
+            <p>LAST LOAN COLLECTED DATE<br><input placeholder="" type="date" id="lastloanCollection"><br><br></p>
+            <select name="" id="RepaymentPeriod">
+                <option value="">LOAN REPAYMENT PERIOD</option>
+                <option value="1">1 MONTH</option>
+                <option value="1">2 MONTHS</option>
+                <option value="1">3 MONTHS</option>
+                <option value="1">4 MONTHS</option>
+                <option value="1">5 MONTHS</option>
+                <option value="1">6 MONTHS</option>
+                <option value="2">1 YEAR</option>
+                <OPtion value="3">2 YEARS</OPtion>
+                <option value="4">3 YEARS</option>
+            </select> <br> <br>
+        
+        </div>
+        <!-- <p><input type="radio" >jejjejje</p> -->
 
+        <div class="topbal">
+            <h1>Bank Details</h1>
+            <input placeholder="BANK NAME"><br><br>
+            <input placeholder="ACCOUNT NUMBER" type="number"><br><br>
+            <select name="" id="accountType">
+                <option value="">SELECT ACCOUNT TYPE</option>
+                <option value="SAVINGS">SAVINGS</option>
+                <option value="CURRENT">CURRENT</option>
+            </select> <br> <br>
+            <p>LAST DEPOSIT DATE<br><input placeholder="" type="date" id="DepositDate"><br><br></p>
+            <!-- <input placeholder="ACCOUNT TYPE" id="AccType"><br><br> -->
+            <input placeholder="ACCOUNT BALANCE" id="AccBal"><br><br>
+            <input placeholder="MONTHLY INCOME" type="number" id="awesome" min="0"><br><br>
         </div>
 
         <div class="top5">
-            <a href="#"><button>Apply</button></a>
+            <button type="button" id="Apply" onclick="vicky()">Apply</button>
             <button>Reset form</button>
         </div>
 
@@ -67,6 +99,7 @@
         </div>
         </div>
     </header>
-    
+</form>
+    <script src="loan.js"></script>
 </body>
 </html>
